@@ -1,0 +1,111 @@
+/*Resetimi i Default CSS-it*/
+body {
+	margin: 0;
+	font-family: 'Segoe UI';
+	background-color: #f6f6f6;
+}
+
+/*Selectimi permes tagut*/
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	    list-style: none;
+}
+
+button {
+	background: none;
+	border: 0;
+}
+
+
+/*Selectimi permes klases*/
+.header {
+	background-color: #434343;
+	padding: 20px 40px;
+}
+
+	div.header a.logo{
+		color: #f6f6f6;
+		font-size: 28px;
+	}
+
+/*Selectimi permes tagut dhe klases perkatese*/
+div.content {
+	margin: 0 auto;
+	width: 920px;
+}
+
+	div.content ul.list {
+		width: 100%;
+		margin-bottom: 10px;
+		float: left;
+	}
+
+		div.content ul.list li {
+			width: calc(100% - 30px);
+			padding: 15px;
+			background: #fff;
+			border-radius: 10px;
+			border: 1px solid #ededed;
+			border-bottom-width: 2px;
+			margin-bottom: -2px;
+			float: left;
+		}
+
+			div.content ul.list li span {
+				float: left;
+			}
+
+			div.content ul.new li span {
+				float: none;
+			}
+
+			div.content ul.list li span.todo-text {
+				width: 86%;
+				font-style: italic;
+			}
+			
+			div.content ul.completed li span.todo-text {
+				text-decoration: line-through;
+			}
+
+			div.content ul.list li span button {
+				cursor: pointer;
+			}
+
+			div.content ul.list li span button.add{
+				color: #4285f4;
+			}
+
+			div.content ul.list li span button.edit{
+				color: #0f9d58;
+			}
+
+			div.content ul.list li span button.delete{
+				color: #d23f31;
+			}
+			div.content ul.list li span button:hover {
+				opacity: 0.8;
+			}
+
+    	div.content ul.new li { 
+			padding: 3px;
+			width: calc(100% - 5px);
+		}
+		div.content ul.new li input { 
+		    width: 91%;
+		    padding: 15px;
+		    border: 0;
+		}
+
+.footer {
+	float: left;
+	width: 100%;
+	text-align: center;
+}

@@ -7,6 +7,14 @@
 
 	<!-- Lidhja e HTML me CSS (external) -->
 	<link href="inc/css/style.css" rel="stylesheet" type="text/css">
+	<script>
+		var array = [1,3,5]
+		
+
+
+var myId = document.getElementById('myId')
+
+	</script>
 </head>
 
 <!-- BODY, cdo gje qe shkruajm brenda body, do te paraqitet ne Browser -->
@@ -20,66 +28,24 @@
 		<ul class="list new">
 			<h2>E re</h2>
 			<li>
-			 	<span><input type="text" placeholder="Shto te re"></span>
+			 	<span><input id="newValue" type="text" placeholder="Shto te re"></span>
 			 	<span>
-			 		<button class="add">Shto</button>
+			 		<button onclick="shtoToDo()" class="add">Done</button>
 			 	</span>
 			</li>
 		</ul>
 		<ul class="list">
 			<h2>List</h2>
-			<li>
-			 	<span><input type="checkbox"></span>
-			 	<span class="todo-text">Lorem ipsum dolor sit amet</span>
-			 	<span>
-			 		<button class="edit">Edito</button>
-			 		<button  class="delete">Fshije</button>
-			 	</span>
-			</li>
-			<li>
-			 	<span><input type="checkbox"></span>
-			 	<span class="todo-text">Lorem ipsum dolor sit amet</span>
-			 	<span>
-			 		<button class="edit">Edito</button>
-			 		<button  class="delete">Fshije</button>
-			 	</span>
-			</li>
-			<li>
-			 	<span><input type="checkbox"></span>
-			 	<span class="todo-text">Lorem ipsum dolor sit amet</span>
-			 	<span>
-			 		<button class="edit">Edito</button>
-			 		<button  class="delete">Fshije</button>
-			 	</span>
-			</li>
+			<button onclick="onClickTest()" class="delete">Test button</button>
+			<div id="listaEPaKompletume">Hello World</div>
+			
 		</ul>
 
 		<ul class="list completed">
 			<h2>Te kompletume</h2>
-			<li>
-			 	<span><input type="checkbox" checked></span>
-			 	<span class="todo-text">Lorem ipsum dolor sit amet</span>
-			 	<span>
-			 		<button class="edit">Edito</button>
-			 		<button  class="delete">Fshije</button>
-			 	</span>
-			</li>
-			<li>
-			 	<span><input type="checkbox" checked></span>
-			 	<span class="todo-text">Lorem ipsum dolor sit amet</span>
-			 	<span>
-			 		<button class="edit">Edito</button>
-			 		<button  class="delete">Fshije</button>
-			 	</span>
-			</li>
-			<li>
-			 	<span><input type="checkbox" checked></span>
-			 	<span class="todo-text">Lorem ipsum dolor sit amet</span>
-			 	<span>
-			 		<button class="edit">Edito</button>
-			 		<button  class="delete">Fshije</button>
-			 	</span>
-			</li>
+			<div id="listaEKompletume"></div>
+
+
 		</ul>
 	</div>
 	<!-- /.content -->
@@ -89,6 +55,6 @@
 		<span>Copyright 2018</span>
 	</div>
 	<!-- /.footer -->
-
+	<script src="inc/js/script.js"></script>
 </body>
 </html>
